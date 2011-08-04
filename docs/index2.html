@@ -9,11 +9,11 @@
     require({
         waitSeconds: 1,
         packagePaths: {
-            "lib": [ { name: "gcli", main: "index", lib: "." } ]
+            'lib': [ { name: 'gcli', main: 'index', lib: '.' } ]
         }
     });
 
-    var deps = [ "gcli/index", "gcli/ui/index", "pilot/fixoldbrowsers" ];
+    var deps = [ 'gcli/index', 'gcli/browser/index' ];
 
     require(deps, function(gcli, ui) {
         gcli.startup();

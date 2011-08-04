@@ -36,7 +36,7 @@ function buildStandard() {
     source: copy.source.commonjs({
       project: project,
       // This list of dependencies should be the same as in build/*.html
-      require: [ 'gcli/index', 'gcli/ui/start/browser', 'demo/index' ]
+      require: [ 'gcli/index', 'gcli/browser/index', 'demo/index' ]
     }),
     filter: copy.filter.moduleDefines,
     dest: sources
@@ -85,7 +85,7 @@ function buildFirefox() {
 
   var project = copy.createCommonJsProject({
     roots: [ gcliHome + '/lib' ],
-    ignores: [ 'text!gcli/ui/inputter.css' ]
+    ignores: [ 'text!gcli/browser/inputter.css' ]
   });
 
   copy({
@@ -94,7 +94,7 @@ function buildFirefox() {
       copy.source.commonjs({
         project: project,
         // This list of dependencies should be the same as in suffix-gcli.jsm
-        require: [ 'gcli/index', 'gcli/ui/start/firefox' ]
+        require: [ 'gcli/index', 'gcli/firefox/index' ]
       }),
       'build/suffix-gcli.jsm'
     ],

@@ -34,7 +34,7 @@
   <script type="text/javascript" src="gcli-uncompressed.js"></script>
   <script type="text/javascript">
     // This list should be the same as the browser part of Makefile.dryice.js
-    var deps = [ 'gcli/index', 'gcli/ui/start/browser', 'demo/index' ];
+    var deps = [ 'gcli/index', 'gcli/browser/index', 'demo/index' ];
     require(deps, function(gcli, browser, demo) {
       browser.createView({
         children: [ gcli.ui.RequestsView ],

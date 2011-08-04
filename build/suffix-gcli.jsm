@@ -5,7 +5,7 @@
  * The dependencies specified here should be the same as in Makefile.dryice.js
  */
 var gcli = require("gcli/index");
-var firefox = require("gcli/ui/start/firefox");
+var firefox = require("gcli/firefox/index");
 
 gcli._internal = {
   require: require,
