@@ -15,7 +15,8 @@
  * limitations under the License.
  */
 
-exports.gcliHome = __dirname;
+exports.gcliHome = __dirname;4;
+
 
 /**
  * There are 2 options for loading GCLI CommonJS modules:
